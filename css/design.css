@@ -109,6 +109,7 @@ text-transform: uppercase;
     color: var(--sec-color);
     border-top: 5px solid var(--sec-color);
     padding-top: 35px;
+    padding-bottom: 0;
     
 } 
  

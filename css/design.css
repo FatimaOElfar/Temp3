@@ -21,11 +21,14 @@ body{
     height: 10vh;
     background-color: #fff;
     box-shadow: 0 0 10px #ddd; 
+    width: 100vw;
 }
 .sect1{
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
+    width: 100%;
 
 }
 .nav{
@@ -35,9 +38,6 @@ body{
     align-items: center;
 }
 
-.sect1{
-    position: relative;
-}
  .container{
     padding: 0 130px;
 }
@@ -94,6 +94,7 @@ text-transform: uppercase;
 .nav_linkes ul{
     display: flex;
     flex-direction: row;
+    /* width: 100%; */
 
 }
 

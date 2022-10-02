@@ -340,17 +340,7 @@ transform-origin: top left;
     grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
     gap:15px;
 }
-/* @media(max-width:768px){
-    .articles_content{
-        display: grid;
-        grid-template-columns: repeat(auto-fill ,minmax(225px,1fr));
-        gap:15px;
-    }
-   
-    .articles .container{
-        padding:10px 50px;
-    }
-} */
+
 
 
 .articles_content img{
@@ -766,7 +756,7 @@ font-size:15px;
 .team1{
     /* width: 300px; */
     width:300px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     position: relative;
 }
 .team1 img{

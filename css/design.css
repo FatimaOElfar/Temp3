@@ -852,21 +852,26 @@ background-color:rgba(3, 168, 244, 0.404);
     } */
 
 .test_content{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
     gap:20px 10px;
-    padding-top:50px;
+    padding-top:50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .test_content .test1{
     width:340px;
     background-color: #fff;
     position: relative;
     border-radius: 10px;
+    margin: 0 0 15px 0;
 }
 .test_content .test1 img{
     border-radius: 50%;
     position: absolute;
-    right: -10px;
+    right: -8px;
     width: 100px;
     top: -36px;
     border: 10px solid #ececec;

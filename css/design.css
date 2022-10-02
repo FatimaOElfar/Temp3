@@ -296,7 +296,7 @@ transform-origin: top left;
 }
 
 .angle{
-    margin-top:89%;
+    margin-top:8%;
     text-align: center;
     color: var(--sec-color);
     animation-name:angle-moving;

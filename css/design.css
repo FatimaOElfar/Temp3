@@ -1171,7 +1171,7 @@ padding:15px 0;
 .skill3 h2::before{
     content: "70%";
     position: absolute;
-    right:22%;
+    right:15%;
     border-radius: 30px;
     background-color: #fff;
     color:var(--main-color);

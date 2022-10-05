@@ -17,15 +17,15 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
-
+a:hover{
+    text-decoration: none;
+}
 header{
     width: 100%;
-   height:20vh;
 }
 .head{
     background: #fff;
     box-shadow: 0 0 10px #ddd;
-    height: 15vh;
 }
 header .container1{
     /* max-width: 80%; */
@@ -68,7 +68,7 @@ header .container1{
 text-transform: uppercase;
 
 }
-.nav_linkes ul{
+.nav_linkes{
     display: flex;
     flex-direction: row;
     
@@ -76,12 +76,12 @@ text-transform: uppercase;
 }
 
 
-.nav_linkes ul a{
+.nav_linkes a{
     padding: 20px;
     color: black;
     font-size: 20px;
 }
-.nav_linkes ul .up_icon a:hover{
+.nav_linkes .up_icon a:hover{
     width: 30px;
     background-color:#fafafa;
     color: var(--sec-color);
@@ -125,6 +125,9 @@ text-transform: uppercase;
     .other_content img{
         display: none;
     }
+    .nav_linkes{
+        flex-direction: column;
+    }
 }
  ul.links{
     display: flex;
@@ -160,6 +163,17 @@ ul .links a , ul.links1 a{
  .hover:hover .other_content{
 display: flex;
 } 
+@media(max-width:768px){
+   ul .links1{
+        display: none;
+    }
+    /* .links{
+        align-items: center;
+    } */
+    .other_content{
+        left:-11%;
+    }
+}
 /* landing */
 
 .landing{
@@ -238,20 +252,16 @@ transform-origin: top left;
     }
    
 }
-@media(max-width:885px){
-    .angle{
-        margin-top:40%;
-    }
-}
+
 
 .angle{
-    margin-top:8%;
+    /* margin-top:8%; */
     text-align: center;
     color: var(--sec-color);
     animation-name:angle-moving;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
+
     animation-timing-function: linear;
 }
 @keyframes angle-moving{
@@ -358,6 +368,8 @@ transform-origin: top left;
 .article1:hover{
     transform:translateY(-10px);
     box-shadow: 0 2px 15px rgb(0 0 0 / 10%),0 2px 15px rgb(0 0 0 / 10%);
+ 
+
 }
 .article1 .info h3{
     padding: 13px 16px;
@@ -370,17 +382,23 @@ transform-origin: top left;
 }
 .article1 .more{
     border-top: 2px solid black;
-    padding:18px;
-    margin: 0 20px;
+    /* padding: 18px; */
+    margin: -11px 20px 10px 20px;
     display: flex;
     justify-content: space-between;
     color: var(--main-color);
-    font-weight:600;
-    font-size:18px;
+    font-weight: 600;
+    font-size: 18px;
 }
-.articles .container .articles_content.articlel:hover .more i{
-animation: arrow_moving 0.3s linear infinite;
+ .articles .container .articles_content .articlel:hover.more i{
+/* animation:arrow_moving 0.3s linear infinite; */
+animation-name:arrow_moving;
+animation-duration: 0.3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
 }
+
 @keyframes arrow_moving{
         0% , 50%{
             transform: translateX(-5px);
